@@ -1,0 +1,13 @@
+{
+  "base_url": "/",
+  "hostname": "0.0.0.0",
+  "password": false,
+  "pid": 36104,
+  "port": 8008,
+  "root_dir": "/home/ubuntu",
+  "secure": false,
+  "sock": "",
+  "token": "",
+  "url": "http://ip-172-31-21-160:8008/",
+  "version": "2.5.0"
+}

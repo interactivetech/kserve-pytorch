@@ -1,0 +1,31 @@
+{
+  "name": "startup.cfg",
+  "modelCount": 1,
+  "models": {
+    "mnist": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "mnist.mar",
+        "minWorkers": 1,
+        "maxWorkers": 5,
+        "batchSize": 1,
+        "maxBatchDelay": 10,
+        "responseTimeout": 120
+      }
+    },
+    "densenet161": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "densenet161.mar",
+        "serialized-file":"densenet161-8d451a50.pth",
+        "handler":"image_classifier",
+        "extra-files":"index_to_name.json",
+        "minWorkers": 1,
+        "maxWorkers": 5,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120
+      }
+    }
+  }
+}

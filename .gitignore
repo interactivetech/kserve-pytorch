@@ -1,0 +1,6 @@
+mnist_torchserve/model-store/densenet161.mar
+*.pth
+python=3.8
+kserve_env
+.cache/
+.ssh/
