@@ -1,0 +1,1014 @@
+2023-04-20T17:41:57,930 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2023-04-20T17:41:57,930 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2023-04-20T17:41:58,398 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2023-04-20T17:41:58,398 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2023-04-20T17:41:58,607 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.7.1
+TS Home: /home/ubuntu/kserve_env/lib/python3.8/site-packages
+Current directory: /home/ubuntu/kserve-pytorch
+Temp directory: /tmp
+Metrics config path: /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 4
+Number of CPUs: 48
+Max heap size: 30688 M
+Python executable: /home/ubuntu/kserve_env/bin/python3
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /home/ubuntu/kserve-pytorch/model-store-test
+Initial Models: fastrcnn=fastrcnn.mar
+Log dir: /home/ubuntu/kserve-pytorch/logs
+Metrics dir: /home/ubuntu/kserve-pytorch/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 4
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /home/ubuntu/kserve-pytorch/model-store-test
+Model config: N/A
+2023-04-20T17:41:58,607 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.7.1
+TS Home: /home/ubuntu/kserve_env/lib/python3.8/site-packages
+Current directory: /home/ubuntu/kserve-pytorch
+Temp directory: /tmp
+Metrics config path: /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 4
+Number of CPUs: 48
+Max heap size: 30688 M
+Python executable: /home/ubuntu/kserve_env/bin/python3
+Config file: N/A
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /home/ubuntu/kserve-pytorch/model-store-test
+Initial Models: fastrcnn=fastrcnn.mar
+Log dir: /home/ubuntu/kserve-pytorch/logs
+Metrics dir: /home/ubuntu/kserve-pytorch/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 4
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /home/ubuntu/kserve-pytorch/model-store-test
+Model config: N/A
+2023-04-20T17:41:58,615 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: fastrcnn.mar
+2023-04-20T17:41:58,615 [INFO ] main org.pytorch.serve.ModelServer - Loading initial models: fastrcnn.mar
+2023-04-20T17:42:01,117 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model fastrcnn
+2023-04-20T17:42:01,117 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model fastrcnn
+2023-04-20T17:42:01,117 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model fastrcnn
+2023-04-20T17:42:01,117 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model fastrcnn
+2023-04-20T17:42:01,117 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model fastrcnn loaded.
+2023-04-20T17:42:01,117 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model fastrcnn loaded.
+2023-04-20T17:42:01,117 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: fastrcnn, count: 4
+2023-04-20T17:42:01,117 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: fastrcnn, count: 4
+2023-04-20T17:42:01,126 [DEBUG] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9001, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:42:01,126 [DEBUG] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9000, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:42:01,126 [DEBUG] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9002, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:42:01,126 [DEBUG] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9003, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:42:01,126 [DEBUG] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9001, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:42:01,126 [DEBUG] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9000, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:42:01,126 [DEBUG] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9003, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:42:01,126 [DEBUG] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9002, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:42:01,127 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel.
+2023-04-20T17:42:01,127 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel.
+2023-04-20T17:42:01,205 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:42:01,205 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:42:01,205 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:42:01,205 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:42:01,207 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:42:01,207 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:42:01,207 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:42:01,207 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:42:01,207 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:42:01,207 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:42:01,207 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:42:01,208 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:42:01,208 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:42:01,208 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:42:01,208 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:42:01,208 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:42:01,208 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:42:01,208 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:42:01,208 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:42:01,208 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:42:01,209 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:42:01,209 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:42:01,209 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:42:01,209 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:42:01,209 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:42:01,217 [INFO ] W-9003-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9003-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,217 [INFO ] W-9003-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9003-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,217 [INFO ] W-9003-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9003-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,218 [INFO ] W-9000-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,218 [INFO ] W-9000-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,218 [INFO ] W-9002-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9002-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,218 [INFO ] W-9002-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9002-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,218 [INFO ] W-9002-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9002-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,218 [INFO ] W-9000-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,218 [INFO ] W-9002-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9002-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,217 [INFO ] W-9003-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9003-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,218 [INFO ] W-9001-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9001-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,218 [INFO ] W-9001-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9001-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,218 [INFO ] W-9001-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9001-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,219 [WARN ] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9001-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,218 [INFO ] W-9001-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9001-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,218 [INFO ] W-9000-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,219 [WARN ] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9001-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,220 [WARN ] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9001-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,220 [WARN ] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9001-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,221 [WARN ] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9002-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,221 [WARN ] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9003-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,221 [WARN ] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,221 [WARN ] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9003-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,221 [WARN ] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9002-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,221 [WARN ] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-fastrcnn_1.0-stderr
+2023-04-20T17:42:01,221 [WARN ] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9003-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,221 [WARN ] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9002-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,221 [WARN ] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,221 [WARN ] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9003-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,221 [WARN ] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9002-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,221 [WARN ] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-fastrcnn_1.0-stdout
+2023-04-20T17:42:01,221 [ERROR] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:42:01,222 [ERROR] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:42:01,220 [ERROR] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:42:01,221 [ERROR] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:42:01,221 [ERROR] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:42:01,222 [ERROR] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:42:01,221 [ERROR] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:42:01,220 [ERROR] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:42:03,236 [INFO ] main org.pytorch.serve.ModelServer - Torchserve stopped.
+2023-04-20T17:42:03,236 [INFO ] main org.pytorch.serve.ModelServer - Torchserve stopped.
+2023-04-20T17:43:57,102 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2023-04-20T17:43:57,102 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager -  Loading snapshot serializer plugin...
+2023-04-20T17:43:57,161 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2023-04-20T17:43:57,161 [INFO ] main org.pytorch.serve.servingsdk.impl.PluginsManager - Initializing plugins manager...
+2023-04-20T17:43:57,355 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.7.1
+TS Home: /home/ubuntu/kserve_env/lib/python3.8/site-packages
+Current directory: /home/ubuntu/kserve-pytorch
+Temp directory: /tmp
+Metrics config path: /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 4
+Number of CPUs: 48
+Max heap size: 30688 M
+Python executable: /home/ubuntu/kserve_env/bin/python3
+Config file: logs/config/20230420174203238-shutdown.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /home/ubuntu/kserve-pytorch/model-store-test
+Initial Models: fastrcnn=fastrcnn.mar
+Log dir: /home/ubuntu/kserve-pytorch/logs
+Metrics dir: /home/ubuntu/kserve-pytorch/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 4
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /home/ubuntu/kserve-pytorch/model-store-test
+Model config: N/A
+2023-04-20T17:43:57,355 [INFO ] main org.pytorch.serve.ModelServer - 
+Torchserve version: 0.7.1
+TS Home: /home/ubuntu/kserve_env/lib/python3.8/site-packages
+Current directory: /home/ubuntu/kserve-pytorch
+Temp directory: /tmp
+Metrics config path: /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml
+Number of GPUs: 4
+Number of CPUs: 48
+Max heap size: 30688 M
+Python executable: /home/ubuntu/kserve_env/bin/python3
+Config file: logs/config/20230420174203238-shutdown.cfg
+Inference address: http://127.0.0.1:8080
+Management address: http://127.0.0.1:8081
+Metrics address: http://127.0.0.1:8082
+Model Store: /home/ubuntu/kserve-pytorch/model-store-test
+Initial Models: fastrcnn=fastrcnn.mar
+Log dir: /home/ubuntu/kserve-pytorch/logs
+Metrics dir: /home/ubuntu/kserve-pytorch/logs
+Netty threads: 0
+Netty client threads: 0
+Default workers per model: 4
+Blacklist Regex: N/A
+Maximum Response Size: 6553500
+Maximum Request Size: 6553500
+Limit Maximum Image Pixels: true
+Prefer direct buffer: false
+Allowed Urls: [file://.*|http(s)?://.*]
+Custom python dependency for model allowed: false
+Metrics report format: prometheus
+Enable metrics API: true
+Workflow Store: /home/ubuntu/kserve-pytorch/model-store-test
+Model config: N/A
+2023-04-20T17:43:57,363 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20230420174203238-shutdown.cfg",
+  "modelCount": 1,
+  "created": 1682012523240,
+  "models": {
+    "fastrcnn": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "fastrcnn.mar",
+        "minWorkers": 4,
+        "maxWorkers": 4,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120
+      }
+    }
+  }
+}
+2023-04-20T17:43:57,363 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Started restoring models from snapshot {
+  "name": "20230420174203238-shutdown.cfg",
+  "modelCount": 1,
+  "created": 1682012523240,
+  "models": {
+    "fastrcnn": {
+      "1.0": {
+        "defaultVersion": true,
+        "marName": "fastrcnn.mar",
+        "minWorkers": 4,
+        "maxWorkers": 4,
+        "batchSize": 1,
+        "maxBatchDelay": 100,
+        "responseTimeout": 120
+      }
+    }
+  }
+}
+2023-04-20T17:43:57,370 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20230420174203238-shutdown.cfg
+2023-04-20T17:43:57,370 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Validating snapshot 20230420174203238-shutdown.cfg
+2023-04-20T17:43:57,371 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20230420174203238-shutdown.cfg validated successfully
+2023-04-20T17:43:57,371 [INFO ] main org.pytorch.serve.snapshot.SnapshotManager - Snapshot 20230420174203238-shutdown.cfg validated successfully
+2023-04-20T17:43:59,884 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model fastrcnn
+2023-04-20T17:43:59,884 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Adding new version 1.0 for model fastrcnn
+2023-04-20T17:43:59,884 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model fastrcnn
+2023-04-20T17:43:59,884 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model fastrcnn
+2023-04-20T17:43:59,884 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model fastrcnn
+2023-04-20T17:43:59,884 [DEBUG] main org.pytorch.serve.wlm.ModelVersionedRefs - Setting default version to 1.0 for model fastrcnn
+2023-04-20T17:43:59,885 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model fastrcnn loaded.
+2023-04-20T17:43:59,885 [INFO ] main org.pytorch.serve.wlm.ModelManager - Model fastrcnn loaded.
+2023-04-20T17:43:59,885 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: fastrcnn, count: 4
+2023-04-20T17:43:59,885 [DEBUG] main org.pytorch.serve.wlm.ModelManager - updateModel: fastrcnn, count: 4
+2023-04-20T17:43:59,894 [DEBUG] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9002, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:43:59,894 [DEBUG] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9000, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:43:59,894 [DEBUG] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9003, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:43:59,894 [DEBUG] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9001, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:43:59,894 [DEBUG] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9002, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:43:59,894 [DEBUG] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9000, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:43:59,894 [DEBUG] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9003, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:43:59,894 [DEBUG] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - Worker cmdline: [/home/ubuntu/kserve_env/bin/python3, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py, --sock-type, unix, --sock-name, /tmp/.ts.sock.9001, --metrics-config, /home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/configs/metrics.yaml]
+2023-04-20T17:43:59,895 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel.
+2023-04-20T17:43:59,895 [INFO ] main org.pytorch.serve.ModelServer - Initialize Inference server with: EpollServerSocketChannel.
+2023-04-20T17:43:59,957 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2023-04-20T17:43:59,957 [INFO ] main org.pytorch.serve.ModelServer - Inference API bind to: http://127.0.0.1:8080
+2023-04-20T17:43:59,957 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: EpollServerSocketChannel.
+2023-04-20T17:43:59,957 [INFO ] main org.pytorch.serve.ModelServer - Initialize Management server with: EpollServerSocketChannel.
+2023-04-20T17:43:59,958 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2023-04-20T17:43:59,958 [INFO ] main org.pytorch.serve.ModelServer - Management API bind to: http://127.0.0.1:8081
+2023-04-20T17:43:59,958 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: EpollServerSocketChannel.
+2023-04-20T17:43:59,958 [INFO ] main org.pytorch.serve.ModelServer - Initialize Metrics server with: EpollServerSocketChannel.
+2023-04-20T17:43:59,959 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2023-04-20T17:43:59,959 [INFO ] main org.pytorch.serve.ModelServer - Metrics API bind to: http://127.0.0.1:8082
+2023-04-20T17:43:59,972 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:43:59,972 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:43:59,972 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:43:59,972 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:43:59,973 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:43:59,973 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:43:59,973 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:43:59,973 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:43:59,973 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:43:59,973 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:43:59,973 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:43:59,974 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:43:59,974 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:43:59,974 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:43:59,974 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:43:59,974 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:43:59,974 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:43:59,974 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:43:59,974 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:43:59,974 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:43:59,974 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:43:59,975 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:43:59,975 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:43:59,975 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:43:59,975 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:43:59,980 [INFO ] W-9003-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9003-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,980 [INFO ] W-9001-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9001-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,980 [INFO ] W-9002-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9002-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,980 [INFO ] W-9000-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,980 [INFO ] W-9003-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9003-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,980 [INFO ] W-9003-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9003-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,980 [INFO ] W-9002-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9002-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,980 [INFO ] W-9001-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9001-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,980 [INFO ] W-9000-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,980 [INFO ] W-9000-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,980 [INFO ] W-9002-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9002-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,980 [INFO ] W-9001-fastrcnn_1.0-stderr org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9001-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,980 [INFO ] W-9003-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9003-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,980 [INFO ] W-9002-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9002-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,980 [INFO ] W-9000-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9000-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,982 [WARN ] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,982 [WARN ] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9003-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,982 [WARN ] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9002-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,982 [WARN ] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9001-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,980 [INFO ] W-9001-fastrcnn_1.0-stdout org.pytorch.serve.wlm.WorkerLifeCycle - Stopped Scanner - W-9001-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,982 [WARN ] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9002-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,982 [WARN ] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,982 [WARN ] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9003-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,983 [WARN ] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,983 [WARN ] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9003-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,982 [WARN ] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9001-fastrcnn_1.0-stderr
+2023-04-20T17:43:59,983 [WARN ] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9002-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,983 [WARN ] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9000-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,983 [WARN ] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9001-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,983 [WARN ] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9003-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,983 [WARN ] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9002-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,983 [WARN ] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerLifeCycle - terminateIOStreams() threadName=W-9001-fastrcnn_1.0-stdout
+2023-04-20T17:43:59,983 [ERROR] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:43:59,983 [ERROR] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:43:59,983 [ERROR] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:43:59,983 [ERROR] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:43:59,983 [ERROR] W-9002-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:43:59,983 [ERROR] W-9001-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:43:59,983 [ERROR] W-9003-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:43:59,983 [ERROR] W-9000-fastrcnn_1.0 org.pytorch.serve.wlm.WorkerThread - Backend worker error
+org.pytorch.serve.wlm.WorkerInitializationException: Backend stream closed.
+	at org.pytorch.serve.wlm.WorkerLifeCycle.startWorker(WorkerLifeCycle.java:155) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.connect(WorkerThread.java:306) ~[model-server.jar:?]
+	at org.pytorch.serve.wlm.WorkerThread.run(WorkerThread.java:181) [model-server.jar:?]
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515) [?:?]
+	at java.util.concurrent.FutureTask.run(FutureTask.java:264) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128) [?:?]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628) [?:?]
+	at java.lang.Thread.run(Thread.java:829) [?:?]
+2023-04-20T17:44:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:44:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:44:00,240 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2023-04-20T17:44:00,240 [ERROR] Thread-1 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 64, in gpu_utilization
+    import nvgpu
+ModuleNotFoundError: No module named 'nvgpu'
+
+2023-04-20T17:45:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:45:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:45:01,749 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:45:01,749 [ERROR] Thread-2 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:46:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:46:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:46:00,863 [ERROR] Thread-3 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:46:00,863 [ERROR] Thread-3 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:47:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:47:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:47:00,861 [ERROR] Thread-4 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:47:00,861 [ERROR] Thread-4 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:48:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:48:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:48:00,861 [ERROR] Thread-5 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:48:00,861 [ERROR] Thread-5 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:49:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:49:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:49:00,860 [ERROR] Thread-6 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:49:00,860 [ERROR] Thread-6 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:50:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:50:00,183 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:50:00,869 [ERROR] Thread-7 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:50:00,869 [ERROR] Thread-7 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:51:00,182 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:51:00,182 [WARN ] pool-3-thread-1 org.pytorch.serve.metrics.MetricCollector - worker pid is not available yet.
+2023-04-20T17:51:00,859 [ERROR] Thread-8 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+
+2023-04-20T17:51:00,859 [ERROR] Thread-8 org.pytorch.serve.metrics.MetricCollector - Traceback (most recent call last):
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 850, in _nvmlGetFunctionPointer
+    _nvmlGetFunctionPointer_cache[name] = getattr(nvmlLib, name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 386, in __getattr__
+    func = self.__getitem__(name)
+  File "/usr/lib/python3.8/ctypes/__init__.py", line 391, in __getitem__
+    func = self._FuncPtr((name_or_ordinal, self))
+AttributeError: /lib/x86_64-linux-gnu/libnvidia-ml.so.1: undefined symbol: nvmlDeviceGetComputeRunningProcesses_v3
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "ts/metrics/metric_collector.py", line 27, in <module>
+    system_metrics.collect_all(sys.modules['ts.metrics.system_metrics'], arguments.gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 119, in collect_all
+    value(num_of_gpu)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/metrics/system_metrics.py", line 90, in gpu_utilization
+    statuses = list_gpus.device_statuses()
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in device_statuses
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 75, in <listcomp>
+    return [device_status(device_index) for device_index in range(device_count)]
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/nvgpu/list_gpus.py", line 19, in device_status
+    nv_procs = nv.nvmlDeviceGetComputeRunningProcesses(handle)
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2608, in nvmlDeviceGetComputeRunningProcesses
+    return nvmlDeviceGetComputeRunningProcesses_v3(handle);
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 2576, in nvmlDeviceGetComputeRunningProcesses_v3
+    fn = _nvmlGetFunctionPointer("nvmlDeviceGetComputeRunningProcesses_v3")
+  File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/pynvml/nvml.py", line 853, in _nvmlGetFunctionPointer
+    raise NVMLError(NVML_ERROR_FUNCTION_NOT_FOUND)
+pynvml.nvml.NVMLError_FunctionNotFound: Function Not Found
+

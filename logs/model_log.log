@@ -1,0 +1,80 @@
+2023-04-20T17:42:01,205 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:42:01,205 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:42:01,205 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:42:01,205 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:42:01,207 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:42:01,207 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:42:01,207 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:42:01,207 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:42:01,207 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:42:01,207 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:42:01,207 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:42:01,207 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:42:01,207 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:42:01,208 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:42:01,208 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:42:01,208 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:42:01,208 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:42:01,208 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:42:01,208 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:42:01,208 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:42:01,208 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:42:01,208 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:42:01,209 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:42:01,209 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:42:01,209 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:42:01,209 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:42:01,209 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:43:59,972 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:43:59,972 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:43:59,972 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:43:59,972 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG - Traceback (most recent call last):
+2023-04-20T17:43:59,973 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_service_worker.py", line 17, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:43:59,973 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:43:59,973 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:43:59,973 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     from ts.model_loader import ModelLoaderFactory
+2023-04-20T17:43:59,973 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:43:59,973 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:43:59,973 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/model_loader.py", line 13, in <module>
+2023-04-20T17:43:59,973 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:43:59,974 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:43:59,974 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:43:59,974 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     from ts.service import Service
+2023-04-20T17:43:59,974 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:43:59,974 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/service.py", line 10, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:43:59,974 [WARN ] W-9000-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:43:59,974 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:43:59,974 [WARN ] W-9003-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:43:59,974 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     from ts.protocol.otf_message_handler import create_predict_response
+2023-04-20T17:43:59,974 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:43:59,974 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -   File "/home/ubuntu/kserve_env/lib/python3.8/site-packages/ts/protocol/otf_message_handler.py", line 13, in <module>
+2023-04-20T17:43:59,975 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:43:59,975 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG -     import torch
+2023-04-20T17:43:59,975 [WARN ] W-9001-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'
+2023-04-20T17:43:59,975 [WARN ] W-9002-fastrcnn_1.0-stderr MODEL_LOG - ModuleNotFoundError: No module named 'torch'

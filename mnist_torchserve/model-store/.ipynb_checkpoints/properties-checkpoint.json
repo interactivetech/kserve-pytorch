@@ -26,5 +26,19 @@
     "max-batch-delay": 100,
     "response-timeout": 120,
     "requirements": ""
+  },
+   {
+    "model-name": "fasterrcnn",
+    "version": "1.0",
+    "model-file": "",
+    "serialized-file": "fasterrcnn_resnet50_fpn_coco-258fb6c6.pth",
+    "extra-files": "index_to_name.json",
+    "handler": "object_detector",
+    "min-workers" : 1,
+    "max-workers": 3,
+    "batch-size": 1,
+    "max-batch-delay": 100,
+    "response-timeout": 120,
+    "requirements": ""
   }
 ]

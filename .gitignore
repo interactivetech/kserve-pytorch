@@ -4,3 +4,5 @@ python=3.8
 kserve_env
 .cache/
 .ssh/
+mnist_torchserve/model-store/fasterrcnn.mar
+xview-fasterrcnn.mar
