@@ -1,9 +1,13 @@
 from torchvision import transforms
 # from ts.torch_handler.image_classifier import ImageClassifier
-from ts.torch_handler.object_detection import ObjectDetector
+from ts.torch_handler.object_detector import ObjectDetector
 
-from torch.profiler import ProfilerActivity
-
+import torch
+from torchvision import transforms
+from torchvision import __version__ as torchvision_version
+from packaging import version
+from ts.torch_handler.vision_handler import VisionHandler
+from ts.utils.util import map_class_to_label
 
 class FasterRCNNObjectDetector(ObjectDetector):
     """

@@ -40,5 +40,19 @@
     "max-batch-delay": 100,
     "response-timeout": 120,
     "requirements": ""
+  },
+    {
+    "model-name": "xview-fasterrcnn",
+    "version": "1.0",
+    "model-file": "",
+    "serialized-file": "model_8_stripped.pth",
+    "extra-files": "xview_index_to_name.json",
+    "handler": "fasterrcnn_handler.py",
+    "min-workers" : 1,
+    "max-workers": 3,
+    "batch-size": 1,
+    "max-batch-delay": 100,
+    "response-timeout": 120,
+    "requirements": ""
   }
 ]
