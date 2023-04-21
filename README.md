@@ -274,3 +274,74 @@ INPUT_PATH_cat=@./cat.json
 curl -v -H "Host: ${SERVICE_HOSTNAME}"  http://${CLUSTER_IP}/v1/models/${MODEL_NAME_d}:predict -d ${INPUT_PATH}
 
 
+# Object Detection FasterRCNN Kserve
+
+wget https://download.pytorch.org/models/fasterrcnn_resnet50_fpn_coco-258fb6c6.pth
+
+torch-model-archiver --model-name fasterrcnn --version 1.0 --model-file /home/ubuntu/kserve-pytorch/serve/examples/object_detector/fast-rcnn/model.py --serialized-file fasterrcnn_resnet50_fpn_coco-258fb6c6.pth --handler object_detector --extra-files /home/ubuntu/kserve-pytorch/serve/examples/object_detector/index_to_name.json
+
+pip install torchserve nvgpu
+
+Mkdir model-store-test
+Mv fasterrcnn.mar model-store-test/
+torchserve --start --model-store model-store-test/ --models fastrcnn=fasterrcnn.mar
+torchserve --stop
+
+
+MODEL_NAME_f=fasterrcnn
+SERVICE_HOSTNAME=$(kubectl get inferenceservice torchserve -o jsonpath='{.status.url}' | cut -d "/" -f 3)
+CLUSTER_IP=localhost:8080
+
+
+mv input.json ~/cat.json
+INPUT_PATH_cat=@./cat.json
+
+curl -v -H "Host: ${SERVICE_HOSTNAME}"  http://${CLUSTER_IP}/v1/models/${MODEL_NAME_f}:predict -d ${INPUT_PATH_cat}
+
+scp -i "andrew-determined-env.pem" /Users/mendeza/Downloads/faster_rcnn_e2e_checkpoints/model_8.pth ubuntu@ec2-54-90-185-179.compute-1.amazonaws.com:/home/ubuntu/kserve-pytorch
+
+
+—
+
+# Xview FasterRCNN Test
+
+scp -i "andrew-determined-env.pem" /Users/mendeza/Downloads/faster_rcnn_e2e_checkpoints/model_8.pth ubuntu@ec2-54-90-185-179.compute-1.amazonaws.com:/home/ubuntu/kserve-pytorch
+
+Strip model pth: notebook 
+
+torch-model-archiver --model-name xview-fasterrcnn --version 1.0 --model-file /home/ubuntu/kserve-pytorch/serve/examples/object_detector/fast-rcnn/model-xview.py --serialized-file model_8_stripped.pth --handler /home/ubuntu/kserve-pytorch/serve/examples/object_detector/fasterrcnn_handler.py --extra-files /home/ubuntu/kserve-pytorch/serve/examples/object_detector/fast-rcnn/xview-labels/index_to_name.json
+
+Update test.txt
+Update config.properties
+Add .mar to model-store
+Update properties.json
+
+kubectl cp mnist_torchserve/config/config.properties model-store-pod:/pv/config/config.properties
+
+kubectl exec --tty model-store-pod -- cat /pv/config/config.properties
+
+kubectl cp mnist_torchserve/model-store/xview-fasterrcnn.mar model-store-pod:/pv/model-store
+
+kubectl exec --tty model-store-pod -- ls /pv/model-store
+
+kubectl cp mnist_torchserve/model-store/properties.json model-store-pod:/pv/model-store
+
+Exec into container
+
+kubectl exec -it  torchserve-predictor-default-00001-deployment-69ff797b68-zxh7v -c kserve-container sh
+
+ISSUE INSTALL the version that is in the container!!!
+
+ pip install torch==1.11.0 torchvision==0.12.0
+
+MODEL_NAME_x=xview-fasterrcnn
+SERVICE_HOSTNAME=$(kubectl get inferenceservice torchserve -o jsonpath='{.status.url}' | cut -d "/" -f 3)
+CLUSTER_IP=localhost:8080
+
+
+mv input.json ~/cat.json
+INPUT_PATH_cat=@./cat.json
+
+curl -v -H "Host: ${SERVICE_HOSTNAME}"  http://${CLUSTER_IP}/v1/models/${MODEL_NAME_x}:predict -d ${INPUT_PATH_cat}
+
+kserve-pytorch/serve/examples/object_detector/fast-rcnn/xview-labels/index_to_name.json
