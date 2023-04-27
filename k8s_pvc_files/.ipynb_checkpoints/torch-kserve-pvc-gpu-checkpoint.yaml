@@ -1,0 +1,37 @@
+apiVersion: "serving.kserve.io/v1beta1"
+kind: "InferenceService"
+metadata:
+  name: "torchserve-custom-gpu"
+spec:
+  predictor:
+    pytorch:
+      storageUri: pvc://task-pv-claim/
+      resources:
+        limits:
+          memory: 15Gi
+          nvidia.com/gpu: 1
+        requests:
+          memory: 15Gi
+          nvidia.com/gpu: 1
+
+# apiVersion: "serving.kserve.io/v1beta1"
+# kind: "InferenceService"
+# metadata:
+#   name: "torchserve-custom-gpu"
+# spec:
+#   predictor:
+#     containers:
+#     - image: pytorch/torchserve:0.7.1-gpu
+#       name: torchserve-container
+#       env:
+#           - name: MODEL_BASE_PATH
+#             value: "/mnt/models"
+#           - name: STORAGE_URI
+#             value: "pvc://task-pv-claim"
+#       resources:
+#         limits:
+#           memory: 15Gi
+#           nvidia.com/gpu: 1
+#         requests:
+#           memory: 15Gi
+#           nvidia.com/gpu: 1

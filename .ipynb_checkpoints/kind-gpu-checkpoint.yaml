@@ -1,0 +1,6 @@
+kind: Cluster
+apiVersion: kind.x-k8s.io/v1alpha4
+name: kubeflow-gpu
+nodes:
+  - role: control-plane
+    gpus: True

@@ -6,4 +6,3 @@ spec:
   predictor:
     pytorch:
       storageUri: pvc://task-pv-claim/
-

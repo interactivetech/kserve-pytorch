@@ -45,7 +45,7 @@
     "model-name": "xview-fasterrcnn",
     "version": "1.0",
     "model-file": "",
-    "serialized-file": "model_8_stripped.pth",
+    "serialized-file": "trained_model_stripped.pth",
     "extra-files": "xview_index_to_name.json",
     "handler": "fasterrcnn_handler.py",
     "min-workers" : 1,

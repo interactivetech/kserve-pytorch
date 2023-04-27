@@ -45,7 +45,7 @@
       "1.0": {
         "defaultVersion": true,
         "marName": "xview-fasterrcnn.mar",
-        "serialized-file":"model_8_stripped.pth",
+        "serialized-file":"trained_model_stripped.pth",
         "extra-files":"xview_index_to_name.json",
         "handler":"fasterrcnn_handler.py",
         "minWorkers": 1,
